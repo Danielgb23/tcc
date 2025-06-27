@@ -1,0 +1,184 @@
+WEEK 1
+
+15/04
+
+I got introduced to the lab and given an office
+
+I prepared the TA (tapered amplifier) by adjusting it's lens until the ASE (amplified spontaneous  emission), the laser that comes out of it when has no input, from the input was collimated. I did that by using the "cube of death" beam splitter that is dangerous in optics because it projects the light upward and projecting the laser into the ceiling to see it from a distance.
+
+Then I aligned the input laser and the TA's ASE so the input lasers goes through the TA correctly. I did that by using two mirrors and alternating the adjustment between then until the lsaers were aligned in both ends.
+
+Then we aligned the laser more by optimizing the laser power at the output with the same 2 mirrors.
+
+The TA collimates the light only on one direction (vertical). I adjusted the lens on it's output until I saw a slit on the ceiling the same way as the input but with a laser input in the TA.
+
+To collimate the horizontal direction we are supposed to use a cylindrical lens. But in the table set up we couldn't put it at the right position because of the other mirrors.
+
+16/04
+
+We finished the cylindrical lens setup to collimate the horizontal part of the beam.
+
+Then we began working on the optical isolator. It's not very easy to work with gluing everything to the board with super glue because it's hard to modify it and you can end up knocking something up and having to clean it, align, and glue it again. 
+
+I also measured the loss of the isolator. 
+
+The isolator works light a diode but for light. It should always be set up after a TA or a laser.
+
+After a lot of work on the isolator it turns out it was inverted. There's a ring that you need to turn on the output to callibrate it and it was where it was supposed to be the input. We removed it and I cleaned the glue it had and on the board.
+
+17/04
+
+I set up and glued the optical isolator back in the board with the correct orientation. Though the light that comes out of the input when calibrating the output ring was a bit odd.
+
+I attended a lecture about gravimetry. The lecturer showed how some of these measurements are done in practice and using different techniques.
+
+We ended up knocking down a mirror that aligned the input with the TA and I had to set it again.
+
+Then the plan is aligning the input beam with the fiber on the output before calibrating the output ring in the isolator.
+
+18/04
+
+I finished configuring the isolator by coupling it with the output fiber by aligning the beams
+Then I measured the  total output in the output fiber. The power was like 10\% inside the fiber of what we get outside before it. 
+
+So I added a telescope before the isolator to reduce the radius of the beam. I had to realign some things but the power improved. though to only 15\%.
+
+Then the rest of the day we spent troubleshooting and brainstorming how to improve the shape of the beam so we can couple it better to the output fiber.
+
+We also went consult with Carlos who knows about the TA and he gave us a report by someone who also implemented a TA and some tips on how it works.
+
+19/04
+
+I changed the lenses in the output of the the TA from 4.51mm to 3.1mm.
+
+And the cilindrical lenses to collimate the horizontal direction from 100(?)mm to 38.1mm as a consequence. The output beam got smaller as a consequence.
+
+Then I redid everything again with the isolator and the output fiber etc and got just a small improvement in the power transmitted to the fiber (25\%). It turns out the shape of the beam is not very satisfactory as it should be more gaussian. It has a "pointy hat" over the beam and this defect comes out of the TA itself or the combination TA/cylindrical lenses. The beam being smaller was a good thing but it made it harder to see the bad shape.
+
+The bright side is that I feel the tasks like doing the beam walk and setting up optical components on the table got easier and more natural.
+
+Maybe we have to tinker with the TA chip's position to solve this. But this is risky. So next week we will talk to Franck who is back from his break to get directions. 
+
+WEEK 2
+
+22/04
+
+Today I tried coupling the beam to the fiber with multiple different currents in the ta. 
+
+i also traced the curves for the ta current vs output power with multiple laser power inputs.
+
+i also looked a the beam profile. it had some little peaks around the main one that repeated in a sort of fractal.
+
+23/04
+
+I made the beam profile for the output of the isolator for multiple TA currents and compared it to the beam profile of a laser coming out of the output collimator. I found out the $w_0$ width beam of the laser from the fiber is larger by 3.5 to 1.
+
+Then I made a telescope with a 50 and 15 focus lenses before the isolator. I got less power after the isolator but I got 50\% more power out of the fiber in the end. 
+
+Tomorrow I will try to use a telescope with a -15 lens instead to fit it after the isolator and see if I can squeeze even more power.
+
+24/04
+
+I finished implementing the 3.5 telescope after the isolator and got ~50\% efficiency on the fiber coupling
+
+Then I watched a conference
+
+Then I redid the telescope with better alignment and redid all for the 1500mA beam profile.
+
+By touching the lens on the TA out I was able to get even more efficiency
+
+25/04
+
+I coupled the other laser input into the setup by coupling it with the ta using the beams morro AMD collimator support.
+
+it was with a low power thoigh só it turns out thr polarization coming out of the cube for each Beam is different. so it did a compromise by changing the wave plate before the ta, plotting  curves with the resulting powers for both inputs. and finding where they overlap with thr highest power.
+
+26/04
+
+By trying to get more power out of the isolator I messed up the fiber coupling and had to redo it. Though it's easier now to do it.
+
+I also used a pinhole to verify that the height was uniform going through the isolator and also the telescope. this improved the the power coupled in the fiber.
+
+But then again back to the isolator franck removed it to align it better and it changes a bit the direction of the beam. so I had to redo the fiber coupling and I didn't get as much power as before when I aligned the telescope. 
+
+At the end of the day I noticed the beam was no longer aligned in the horizontal direction at the output of the isolator. So next week I will align it again and try to recouple the fiber.
+
+WEEK 3
+
+29/04
+
+I made the graph of the TA current vs the fiber output
+
+I also made a graph of the TA current vs the laser output but now for an input laser of 5mW on both collimators for the input and also 10mW.
+
+30/04
+
+The power on the output fiber was oscillating. I took almost the whole day to figure out it was the isolator. I suspected it was reflecting some power back to the TA and creating some feedback condition. As suggested by Baptist slightly tilting the beam inside the isolator did the trick and stopped the oscillations. But in the process I burned a paper near a mirror and had to change it. The whole thing, tilting the beam and replacing the mirror made me lose 10\% of the power on the fiber unfortunately. Though I changed the fiber input from the fiber splitter to the regular fiber input. So this might have changed the resulting power too.
+
+02/03
+
+I secured the lens in the TA output in it's position with a screw.
+
+03/05
+
+I glued all the optical components with the 2 component glue.
+
+We also transferred the whole build to the lab mounted with the experiment.
+
+WEEK 4
+
+06/05
+
+At morning I mostly just cleaned and organized stuff.
+
+Then we had to put another isolator after one of the raman lasers because one was not enough to stop the TA from interfering in it. This took some work redoing the alignments and after registering the power around the circuit some powers were lower than expect so there's a need to re optimize the setup again.
+
+07/05
+
+I optimized the coupling in the output fiber and could get a lot more power for one of the lasers. Though I didn't get as much as when I was working on the table. I think I might need to recouple the inputs with the TA. Though I am not sure I would have the time to redo all the couplings with the experiments now.
+
+Then I did the phase locking while Baptist operated the experiment. In the end with the help of Franck for some details we got the Raman transition.
+
+10/05
+
+There was nobody else at the lab. I just measured the powers on the setup and worked on my report.
+
+WEEK 5
+
+13/05
+
+One of the lasers was getting too little power. Baptist thinks it's because of the input collimator. So I redid the curve for the TA power on basis of the waveplate on the input.
+
+14/05
+
+We fixed the problem with the collimator and got much more power out of the problematic laser.
+
+15/05
+We got the Rabi oscillations on the atoms
+
+16/05
+We measured the frequency of the raman lasers with a wavelength meter and corrected it to another specification. Then after I recoupled everything back we started working on how to put a phase lock between the R2 and a pump laser.
+
+17/05
+
+We started building the new phase lock. We used adjustable PBSs to superpose the 2 beams. But we had problems with the photodiode placement in the biasD because of how it was mounted on it's support. Though we took a long time to figure it out.
+
+WEEK 6
+
+21/05
+
+I fixed the photodiode properly mounted and tried to align the lenses with it which was very difficult. Baptist did it in a few minutes. Tomorrow I am supposed to solder the amplifier into a cable for a power source.
+
+22/05
+
+We worked on the PSS of the R2 and repump laser. I had to substitute the cube where we were superposing the beams because it had a defect right at the spot the beam was optimal but we got the beat again soon after replacing it
+
+23/05
+
+WEEK 7
+
+27/03
+I finished adjusting the laser lotck for the repump/R1
+
+28/05
+I did the beam profile of the raman lasers after the TA until the vacuum chamber.
